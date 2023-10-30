@@ -1,6 +1,6 @@
 
 body {
-  outline: orange dashed;
+  /* outline: orange dashed; */
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #1F2937;
   margin:auto;
@@ -18,16 +18,14 @@ body {
 
 /* Header Links Top */
 .header-container{
-  margin-top: 0px;
+  margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 100px;
-  outline: pink dashed 3px;
   width: 1100px;
   height: auto;
 }
 
 .header.top{
-  outline: pink dashed 1px;
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
@@ -47,8 +45,6 @@ body {
 
 
 .logo{
-  outline: pink dashed 1px;
-
   color: #F9FAF8;
   font-size: 24px;
   font-weight: bold;
@@ -56,25 +52,22 @@ body {
 }
 .links{
   flex-grow:0;
-  outline: pink dashed 1px ;
 }
 
 
 
-/* Header Main Body */
+/* -----------Header Main Body --------------*/
 .header-main{
   display: flex;
   justify-content: space-between;   
 }
 .main-container{
-  outline: greenyellow dashed 2px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   width: 400px;
   padding-right: 40px;
-
 }
 .large-text{
   font-size: 48px;
@@ -82,7 +75,6 @@ body {
   color: #F9FAF8;
 }
 .sub-text{
-  outline: lightcoral dashed 2px;
   width: 400px;
 
   font-size: 18px;
@@ -92,18 +84,31 @@ body {
   flex-grow: 0;
 }
 .main-container button{
-  width: 80px;
-  padding: 5px 10px;
+  width: 100px;
+  padding: 5px 1px;
   flex-basis:auto;
   flex-grow:0;
 
   color:#F9FAF8;
   background-color: #3882F6;
+  border: transparent;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 7px;
 }
+.main-container button:hover{
+  transition: .1s ease;
+  transform: scale(1.05);
+  background-color: white;
+  color: #3882F6;
+}
+.main-container button:active{
+    transition: .1s ease;
+    transform: scale(1);
+
+  }
+
+
 .main-image{
-  outline: lightblue dashed 2px;
 
   display:flex;
   justify-content: center;
@@ -117,24 +122,22 @@ body {
   color: #F9FAF8;
 }
 
-/* Body */
+/* --------------Body Section-------------*/
 .main-body{
   display: flex;
   justify-content: center;
   width: 100%;
   /* height: 450px; */
 
-  outline: lightseagreen dashed 2px;
   background-color: white;
   text-align: center;
 }
 .body-container{
-  outline: greenyellow dashed 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 1000px;
-  padding: 40px 0 100px;
+  padding: 70px 0 100px;
   gap: 40px;
 }
 .body-title{
@@ -143,49 +146,45 @@ body {
     color: #1F2937;
 }
 .gallery{
-  outline: black dashed 1px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 850px;
+  gap: 25px;
 }
 .item{
-  /* outline: lightgreen dashed 1px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
 .item .image{
-  /* display: block; */
-  /* outline: red dashed 1px; */
+
   border: 3px solid #3882F6;
   border-radius: 10px;
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
 }
 .item .text{
   /* display: block; */
-  outline: lightblue dashed 1px;
   width: 140px;
   font-weight: 300;
   font-size: 15px;
   color: #3c3f42;
 }
 
-/* Quote Section  */
+/* -----------Quote Section ----------- */
 .quote-section{
   background-color: #E5E7EB;
   width: 100%;
   /* height: 300px; */
-  padding: 100px 0;
+  padding: 140px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .quote-container{
-  outline: red dashed 1px;
   width: 770px;
   height: 200px;
   display: flex;
@@ -204,5 +203,58 @@ body {
   font-weight: bold;
 }
 
-/* Call to Action Section  */
 
+/*----- Call to Action Section  -------*/
+.calltoaction{
+  width: 100%;
+  height: auto;
+  padding: 80px 0px;
+  background-color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action-container{
+    width: 850px;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #3882F6;
+    border-radius: 8px;
+}
+.text-container{
+  display: flex;
+  flex-direction: column;
+}
+.largetext{
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.smalltext{
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+.action-container button{
+  padding: 5px 20px;
+  border: 2px solid white;
+  background-color: #3882F6;
+  color: white;
+  border-radius:5px;
+  font-weight: bold;
+}
+.action-container button:hover{
+  background-color: white;
+  color: #3882F6;
+  transform: scale(1.05);
+  transition: .1s ease;
+}
+
+.action-container button:active{
+  transform:scale(1);
+  transition: .05s ease;
+}   
