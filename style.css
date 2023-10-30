@@ -1,12 +1,18 @@
-body{
+
+body {
+  outline: orange dashed;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #1F2937;
-  margin: 0px 100px;
+  margin:auto;
+  padding: 0px;
+  /* width: 1140px; */
   box-sizing: border-box;
 
   /* center all elements */
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -59,7 +65,6 @@ body{
   display: flex;
   justify-content: space-between;   
 }
-
 .main-container{
   outline: greenyellow dashed 2px;
   display: flex;
@@ -70,7 +75,6 @@ body{
   padding-right: 40px;
 
 }
-
 .large-text{
   font-size: 48px;
   font-weight: bolder;
@@ -97,8 +101,6 @@ body{
   font-weight: bold;
   border-radius: 8px;
 }
-
-
 .main-image{
   outline: lightblue dashed 2px;
 
@@ -113,3 +115,18 @@ body{
   background: gray;
   color: #F9FAF8;
 }
+
+/* Body */
+.main-body{
+  width: 100%;
+  outline: lightseagreen dashed 2px;
+  background-color: white;
+}
+.body-container{
+  outline: greenyellow dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
